@@ -1,0 +1,18 @@
+@import '../../assets/styles/index.scss';
+
+._pageContent {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  background-color: $darkBlue;
+}
+
+._page {
+  width: calc(100% - 200px);
+  height: calc(100% - 20px);
+  padding: 10px;
+  div:only-child {
+    height: 100%;
+    width: 100%;
+  }
+}

@@ -1,0 +1,45 @@
+@import './color.scss';
+@import './font.scss';
+
+@mixin input() {
+  width: calc(100% - 20px);
+  padding: 10px;
+  border-radius: 20px;
+  border: 1px solid black;
+  margin: 5px 0px;
+  font-family: $muli;
+  &:focus{
+    outline: none;
+  }
+}
+
+@mixin sendButton() {
+  width: 10rem;
+  padding: 10px 2px;
+  background: $buttonLightBlue;
+  color: $white;
+  border-radius: 3px;
+  border: 1px solid transparent;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: 600;
+  transition: all 0.3s;
+  &:hover {
+    transition: all 0.3s;
+    background: $darkBlue;
+    border: 1px solid black;
+  }
+  &:disabled{
+    opacity: 0.5;
+  }
+}
+
+@mixin cancelButton() {
+  width: 11rem;
+  padding: 10px 2px;
+  background: $black;
+  color: $white;
+  border-radius: 3px;
+  border: none;
+  cursor: pointer;
+}
