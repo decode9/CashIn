@@ -5,7 +5,7 @@ class DataConnect {
     db: any;
 
     constructor() {
-        this.db = new Database('sqlite2.db');
+        this.db = new Database('src/assets/sqlite2.db');
     }
 
     run(sql: string) {

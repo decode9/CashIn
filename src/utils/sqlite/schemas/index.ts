@@ -1,3 +1,4 @@
 import login from './login'
+import group from './group'
 
-export default [login]
+export default [login, group]

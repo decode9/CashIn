@@ -12,8 +12,19 @@
         h2 {
             margin: 0;
         }
-        button{
-            @include sendButton();
+        ._buttons {
+            button {
+                @include sendButton();
+            }
         }
+    }
+
+    ._groupContent {
+        background: $shadowGray;
+        border-radius: 20px;
+        padding: 20px;
+        align-items: center;
+        margin-top: 10px;
+        height: calc(100% - 130px);
     }
 }

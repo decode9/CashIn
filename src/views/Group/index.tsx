@@ -1,6 +1,7 @@
 import React, { FC, useEffect, useState } from 'react';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
+import { DynamicTable } from '../../components';
 import { Props, StateProps } from './interface';
 import styles from './styles.scss'
 
@@ -19,7 +20,7 @@ const Group: FC<Props> = () => {
         </div>
       </div>
       <div className={styles._groupContent}>
-
+        <DynamicTable />
       </div>
     </div>
   )
